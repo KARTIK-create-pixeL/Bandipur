@@ -16,7 +16,7 @@
         }
         
         .nav-bg {
-            background-color: #4169E1;
+            background-color: #ffffff;
         }
         
         .search-bg {
@@ -113,24 +113,33 @@
 <body class="min-h-screen bg-gradient-to-b from-blue-50 to-white">
     <!-- Navigation -->
     <nav class="sticky top-0 z-50">
-        <div class="nav-bg text-white">
+        <div class="nav-bg text-black">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
                     <a href="/" class="flex items-center space-x-2 text-2xl font-bold">
-                        <span class="text-white">Bandipur House</span>
+                        <img src="media.png" alt="Bandipur House Logo" class="h-8 w-8">
+                        <span class="text-black">Bandipur House</span>
                     </a>
                     <div class="hidden md:flex items-center space-x-8">
-                        <a href="/" class="text-white hover:text-white/80 transition-colors duration-200 text-sm uppercase">Home</a>
-                        <a href="/clubs" class="text-white hover:text-white/80 transition-colors duration-200 text-sm uppercase">Clubs</a>
-                        <a href="/society" class="text-white hover:text-white/80 transition-colors duration-200 text-sm uppercase">Society</a>
-                        <a href="/events" class="text-white hover:text-white/80 transition-colors duration-200 text-sm uppercase">Events</a>
-                        <a href="/bhc" class="text-white hover:text-white/80 transition-colors duration-200 text-sm uppercase">BHC</a>
-                        <a href="/teams" class="text-white hover:text-white/80 transition-colors duration-200 text-sm uppercase">Teams</a>
-                        <a href="/contents" class="text-white hover:text-white/80 transition-colors duration-200 text-sm uppercase">Contents</a>
+                        <a href="/" class="text-black hover:text-white/80 transition-colors duration-200 text-sm uppercase">Home</a>
+                        <a href="/clubs" class="text-black hover:text-white/80 transition-colors duration-200 text-sm uppercase">Clubs</a>
+                        <a href="/society" class="text-black hover:text-white/80 transition-colors duration-200 text-sm uppercase">Society</a>
+                        <a href="/events" class="text-black hover:text-white/80 transition-colors duration-200 text-sm uppercase">Events</a>
+                        <a href="/bhc" class="text-black hover:text-white/80 transition-colors duration-200 text-sm uppercase">BHC</a>
+                        <a href="/teams" class="text-black hover:text-white/80 transition-colors duration-200 text-sm uppercase">Teams</a>
+                        <a href="/contents" class="text-black hover:text-white/80 transition-colors duration-200 text-sm uppercase">Contents</a>
                     </div>
+                <!-- Sign Up Button -->
+                <div class="ml-2">
+                    <a href="/signup" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-200">
+                        Sign Up
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+</nav>
         
     <!-- Announcement Bar -->
     <div class="announcement-bar text-white py-3 relative overflow-hidden">
