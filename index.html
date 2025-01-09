@@ -84,6 +84,23 @@
     .animate-fade-in.delay-400 {
         animation-delay: 0.4s;
     }
+    .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+    .marquee-text {
+            display: inline-block;
+            animation: move-left 10s linear infinite;
+        }
+    @keyframes move-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
 
     @keyframes fadeIn {
         to {
